@@ -25,18 +25,20 @@ network:
   # When developing your project we suggest getting a private API key
   # You can get them from OnFinality for free https://app.onfinality.io
   # https://documentation.onfinality.io/support/the-enhanced-api-service
-  endpoint: ["https://arbitrum.api.onfinality.io/public"]
+  endpoint:
+    [
+      "https://arbitrum.api.onfinality.io/rpc?apikey=2676a5d7-2408-4582-9c00-12b9268d00bc",
+    ]
   # Recommended to provide the HTTP endpoint of a full chain dictionary to speed up processing
   dictionary: "https://gx.api.subquery.network/sq/subquery/arbitrum-dictionary-eth"
 
 dataSources:
   - kind: ethereum/Runtime # We use ethereum runtime since Arbitrum is a layer-2 that is compatible
-    startBlock: 94503514
-    # startBlock: 91117840 # This is the block that the contract was deployed on https://arbiscan.io/tx/0x300b6199816f44029408efc850fb9d6f8751bbedec3e273909eac6f3a61ee3b3
+    startBlock: 91573785 # This is the block of the first claim dividend https://arbiscan.io/tx/0x300b6199816f44029408efc850fb9d6f8751bbedec3e273909eac6f3a61ee3b3
     options:
       # Must be a key of assets
       abi: winr-staking
-      address: "0xddAEcf4B02A3e45b96FC2d7339c997E072b0d034" # This is the contract address for WINR Staking https://arbiscan.io/address/0xddaecf4b02a3e45b96fc2d7339c997e072b0d034
+      address: "0xddAEcf4B02A3e45b96FC2d7339c997E072b0d034" # This is the contract address for WINR Staking https://arbiscan.io/tx/0x44e9396155f6a90daaea687cf48c309128afead3be9faf20c5de3d81f6f318a6
     assets:
       winr-staking:
         file: "./abis/winr-staking.abi.json"
