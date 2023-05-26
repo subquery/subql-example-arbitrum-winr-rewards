@@ -1,4 +1,4 @@
-# SubQuery - Starter Package
+# SubQuery - Abitrum WINR Example
 
 The Starter Package is an example that you can use as a starting point for developing your SubQuery project.
 
