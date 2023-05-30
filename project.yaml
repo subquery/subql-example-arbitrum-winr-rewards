@@ -27,7 +27,7 @@ network:
   # https://documentation.onfinality.io/support/the-enhanced-api-service
   endpoint:
     [
-      "https://arbitrum.api.onfinality.io/rpc?apikey=2676a5d7-2408-4582-9c00-12b9268d00bc",
+      "https://arbitrum.api.onfinality.io/public",
     ]
   # Recommended to provide the HTTP endpoint of a full chain dictionary to speed up processing
   dictionary: "https://api.subquery.network/sq/subquery/arbitrum-one-dictionary"
