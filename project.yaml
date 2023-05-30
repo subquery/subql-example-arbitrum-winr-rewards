@@ -30,7 +30,7 @@ network:
       "https://arbitrum.api.onfinality.io/rpc?apikey=2676a5d7-2408-4582-9c00-12b9268d00bc",
     ]
   # Recommended to provide the HTTP endpoint of a full chain dictionary to speed up processing
-  dictionary: "https://gx.api.subquery.network/sq/subquery/arbitrum-dictionary-eth"
+  dictionary: "https://api.subquery.network/sq/subquery/arbitrum-one-dictionary"
 
 dataSources:
   - kind: ethereum/Runtime # We use ethereum runtime since Arbitrum is a layer-2 that is compatible
